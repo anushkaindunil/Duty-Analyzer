@@ -1,0 +1,46 @@
+
+#color{
+
+	height: 40px;
+	width: 150px;
+	color: #000066;
+}
+#u_bottom{
+
+	padding: 5px;
+	height: 50px;
+	border-radius: 12px;
+	background-color: #999966;
+}
+#u_bottom table td{
+	padding-top: 10px;
+	width: 200px;
+	height: 30px;
+	color: white;
+}
+#u_bottom table td select{
+	width: 200px;
+	height: 24px;
+	border-radius: 3px;
+}
+#middle{
+	padding: 5px;
+	height: 10px;
+}
+#u_last{
+	padding: 5px;
+	height: 100px;
+	border-radius: 12px;
+	background-color: #ADAD85;
+}
+#u_last table td{
+	padding-top: 30px;
+	width: 200px;
+	height: 30px;
+	color: white;
+}
+progress{
+	width: 200px;
+	height: 20px;
+	border-radius: 4px;
+}

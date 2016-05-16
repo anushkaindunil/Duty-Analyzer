@@ -1,0 +1,118 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<link href="UserReg.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="common.css">
+
+</head>
+<body>
+<center><h1>Project Registration Form</h1></center>
+<script>
+$(function(){
+  	$("#datepicker").datepicker();
+  });
+  $(function(){
+  	$("#datepicker2").datepicker();
+  });
+
+  function phonenumber(inputtxt)  
+{  
+  var phoneno = /^\d{10}$/;  
+  if(inputtxt.value.match(phoneno))  
+  {  
+      return true;  
+  }  
+  else  
+  {  
+     alert("Not a valid Phone Number");  
+     return false;  
+  }  
+  }  
+
+</script>
+
+<?php
+
+mysql_connect ("localhost","root","");
+mysql_select_db("ucsc");
+
+if(isset($_POST['submit'])){
+	
+	
+			
+	$cl_fulname = mysql_escape_string($_POST['cl_fulname']);
+	$cl_mail  = mysql_escape_string($_POST['cl_mail']);
+	$cl_contact  = mysql_escape_string($_POST['cl_contact']);
+	$pro_id  = mysql_escape_string($_POST['pro_id']);
+	$pr_name  = mysql_escape_string($_POST['pr_name']);
+	$pr_description  = mysql_escape_string($_POST['pr_description']);
+	$start_date  = mysql_escape_string($_POST['start_date']);
+	$finished_date  = mysql_escape_string($_POST['finished_date']);
+	
+			
+			
+			
+			
+			//mysql_query("INSERT INTO `project` (`id`,`fname`,`lname`,`uname`,`email`,`password`) VALUES (NULL,'$fname','$lname','$uname','$email1','$pass1' )") or die(mysql_error());
+			 mysql_query("INSERT INTO `project` (`cl_fulname`, `cl_mail`,`cl_contact`,`pro_id`,`pr_name`,`pr_description`,`start_date`,`finished_date`) VALUES ('$cl_fulname','$cl_mail','$cl_contact','$pro_id','$pr_name','$pr_description','$start_date','$finished_date')") or die(mysql_error());
+	
+		
+	
+	
+
+	
+
+}else{
+
+$form =<<<EOT
+<div id="top_common">
+<div id="arrow"><table><tr><td><a href="main_manager.php"><img src="img/h2.png"></a></td><td align="right"><button><a href="logout.php">LOGOUT</a></button></td></tr></table></div>
+</div>
+
+<div id="table">
+<form action="ProjReg.php" method="POST">
+
+
+<table >
+
+		<tr><td align="right"><font color="blue">Client details</font></td><td><br><br><br>
+		<tr><td align="right">Client Name</td><td><br><input type="text" name="cl_fulname" size="60"  style="height:30px;"required></td></tr>
+		<tr><td align="right">Mail address</td><td><br><input type="text" name="cl_mail" size="60"  style="height:30px;"required></td></tr>
+		<tr><td align="right">Contacts no</td><td><br><input type="text" name="cl_contact" size="30"  style="height:30px;"required></td></tr>
+		<tr><td align="right"><font color="blue">Project details</font></td><td><br><br><br>
+		<tr><td align="right">Project ID</td><td><br><input type="text" name="pro_id" size="30"  style="height:30px;"required></td></tr>
+		<tr><td align="right">Project Name</td><td><br><input type="text" name="pr_name" size="60"  style="height:30px;"required></td></tr>
+		<tr><td align="right">Project description</td><td><br><textarea rows="13" cols="90" name="pr_description" size="60"  required></textarea></td></tr>
+		<tr><td align="right"><font color="blue">Duration</font></td><td><br>
+		<tr><td align="right">Start date: </td><td><br><input type="text" id="datepicker" name="start_date" size="30" style="height:30px;" required></td></tr>
+		<tr><td align="right">Finished date: </td><td><br><input type="text" id="datepicker2" name="finished_date" size="30" style="height:30px;" required></td></tr><br><br>
+		 <tr><td align="right"></td><td><input type="submit" name="commit" value="Add users"></p>
+		
+		 <tr><td align="right"></td><td><input type="submit" id="button" name="submit" value="submit" onclick="phonenumber(document.add.cl_contact);"></p>
+		 
+		
+		
+		
+</table>
+
+
+</form>
+</div>
+
+EOT;
+
+echo $form;
+
+}
+
+
+
+?>
+</div>
+</div>
+</body>
+</html>

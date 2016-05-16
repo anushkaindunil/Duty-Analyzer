@@ -1,0 +1,71 @@
+body { 
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background:#D6D6C2;
+}
+#arrow{
+	padding: 5px;
+	height: 20px;
+	background-color: transparent;;
+}
+#arrow table td{
+	width: 1000px;
+	height: 40px;
+}
+#top_common{
+	padding: 5px;
+	height: 50px;
+	background-color:#142933; 
+}
+#arrow img{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+#arrow button a{
+	text-decoration: none;
+}
+#arrow button{
+	border-radius: 5px;
+	width: 100px;
+	height: 30px;
+	background-color: #2EB8E6;
+	
+}
+#print{
+
+	color: red;
+}
+#circle_add{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+#circle_view{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+#inter{
+	display: none;
+	padding: 5px;
+	height: 50px;
+	background-color: #B8B894;
+	border-radius: 5px;
+}
+#inters{
+	display: none;
+	padding: 5px;
+	height: 50px;
+	background-color: #B8B894;
+	border-radius: 5px;
+}
+#circle_add_inter{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+#inters table td{
+	width: 300px;
+	
+}

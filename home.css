@@ -1,0 +1,50 @@
+body { 
+  
+  color: #404040;
+  background: #F8F8F8   ;
+}
+#top{
+	
+	height: :270px;
+	width:100%;
+	text-align: center;
+}
+#login{
+	
+	margin-top: 80px;
+	width:450px;
+	height:180px;
+	border-radius:5px;
+	background-color:#66CCFF ;
+
+}
+#login td{
+	margin-top: 400px;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+}
+#circle{
+	height:40px;
+	width:40px;
+	border-radius:20px;
+	
+}
+#bottom{
+	padding: 5px;
+	height: 10px;
+}
+#end{
+	padding:5px;
+	height:40px;
+	background-color:tranceparent;
+}
+#login input{
+
+	border-radius:5px;
+
+}
+#img{
+
+	width:100%;
+}

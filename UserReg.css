@@ -1,0 +1,46 @@
+body { 
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #AAFFE2;
+}
+#new{
+	
+	
+	margin-left:150px;
+	margin-top:-480px;
+}
+#table table td {
+	
+	height:50px;
+	width:200px;
+	
+	
+}
+#table input{
+	
+	border-radius:5px;
+	
+}
+#taskin{
+	width: 1000px;
+	height: 30px;
+	background-color: #99ccff;
+	border-radius: 5px;
+}
+#taskin:hover{
+	
+	background-color: #00b2b3;
+	border-radius: 5px;
+}
+#edit{
+	width: 100px;
+	height: 30px;
+	background-color: #99ccff;
+	border-radius: 5px;
+}
+#delete{
+	width: 100px;
+	height: 30px;
+	background-color: #99ccff;
+	border-radius: 5px;
+}

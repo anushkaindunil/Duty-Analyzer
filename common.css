@@ -1,0 +1,104 @@
+body { 
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background:#f5f5f0;
+}
+#arrow{
+	padding: 5px;
+	height: 50px;
+	background-color: #0047b3;
+}
+#arrow table td{
+	width: 1000px;
+	height: 40px;
+}
+#top_common{
+	padding: 5px;
+	height: 60px;
+	background-color:transparent; 
+}
+#arrow img{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+#arrow button a{
+	text-decoration: none;
+}
+#arrow button{
+	border-radius: 5px;
+	width: 100px;
+	height: 30px;
+	background-color: #2EB8E6;
+}
+#p{
+	border-radius: 5px;
+	border-color: black;
+	width: 300px;
+	height: 30px;
+	background-color: #00cccc;
+}#p1{
+	border-radius: 5px;
+	border-color: black;
+	width: 300px;
+	height: 30px;
+	background-color: white;
+}#p2{
+	border-radius: 5px;
+	border-color: black;
+	width: 300px;
+	height: 30px;
+	background-color: #00cccc;
+}#p3{
+	border-radius: 5px;
+	border-color: black;
+	width: 300px;
+	height: 30px;
+	background-color: #00cccc;
+}
+#print{
+
+	color: red;
+}
+#circle_add{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+#circle_view{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+#inter{
+	
+	padding: 5px;
+	height: 50px;
+	width: 1200px;
+	background-color: #B8B894;
+	border-radius: 5px;
+}
+#inters{
+	
+	padding: 5px;
+	height: 50px;
+	background-color: #B8B894;
+	border-radius: 5px;
+}
+#circle_add_inter{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+#inters table td{
+	width: 300px;
+	
+}
+#header_topic{
+	font-size: 20;
+	color: white;
+}
+#small{
+	height: 400px;
+	overflow: auto;
+}

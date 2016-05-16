@@ -1,0 +1,103 @@
+#pop{
+	padding: 5px;
+	height: 40px;
+	background-color: #ADAD85;
+	align:center;border-radius: 3px;
+
+}
+#add_bottom table td{
+	width:300px;
+	height: 30px;
+	color: #1A75FF
+}
+#submit{
+	width: 80px;
+	height: 30px;
+	background-color: #CCCCB3;
+	color: #1A75FF;
+	border-radius: 5px;
+
+}
+#submited{
+	width:200px;
+	height: 30px;
+	background-color: #CCCCB3;
+	color: #1A75FF;
+	border-radius: 5px;
+
+}
+#subm{
+	width:100px;
+	height: 30px;
+	background-color: #CCCCB3;
+	color: #1A75FF;
+	border-radius: 5px;
+
+}
+#l_one{
+	padding: 5px;
+	height: 400px;
+	background-color:#b3d9ff;
+	overflow: auto;
+	
+
+}
+table td{
+	width:300px;
+	height: 30px;
+	color: #1A75FF
+}
+#hover{
+	padding: 5px;
+	height: 510px;
+	overflow: auto;
+	background-color: #b3ecff;
+}
+#tp_cmmn{
+	padding: 5px;
+	height: 40px;
+	background-color:#0047b3; 
+}
+#arw{
+	padding: 5px;
+	height: 30px;
+	background-color: transparent;
+}
+#arw table td{
+	width: 1000px;
+	height: 30px;
+}
+#mid{
+	padding: 5px;
+	height: 6px;
+	background-color: black;
+}
+.AnuButton {
+
+    background-color: #3366ff; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    float: left;
+  
+}
+.AnuButton:hover {
+    background-color: #002db3;
+}
+#hover table td{
+	width: 400px;
+	height: 35px;
+	font-size: 16px;
+	color: #00394d;
+}
+#hidde{
+	padding: 5px;
+	background-color:#99e6e6;
+}
